@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+	var script = document.createElement("script");
+	script.src = "http://localhost:8080/index.html?callback=getdata";
+	document.body.appendChild(script);
+	function getdata(data){
+		console.log(data)
+	}
+</script>
